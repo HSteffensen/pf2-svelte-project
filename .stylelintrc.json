@@ -1,0 +1,13 @@
+{
+    "extends": ["stylelint-config-standard-scss", "stylelint-config-html"],
+    "rules": {
+        "indentation": 4,
+        "scss/at-rule-no-unknown": [
+            true,
+            {
+                "ignoreAtRules": ["tailwind", "apply", "layer"]
+            }
+        ]
+    },
+    "ignoreFiles": ["node_modules/*", "build/**"]
+}
